@@ -1,0 +1,52 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": { "project": "./tsconfig.json" },
+  "plugins": ["@typescript-eslint", "prettier", "import"],
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript",
+    "airbnb-typescript/base",
+    "plugin:jsx-a11y/strict",
+    "plugin:import/errors",
+    "prettier"
+  ],
+  "rules": {
+    // "@typescript-eslint/camelcase": "off",
+    // "no-alert": "off",
+    // "no-nested-ternary": "off",
+    // "no-param-reassign": "off",
+    // "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": "error",
+    // "react/require-default-props": "off",
+    // "import/no-named-as-default": "off",
+    // "import/no-cycle": "off",
+    "import/prefer-default-export": "off",
+    // "@typescript-eslint/lines-between-class-members": "off",
+    "import/no-extraneous-dependencies": "off",
+    // "no-underscore-dangle": "off",
+    // "one-var": "off",
+    // "func-names": "off",
+    // "jsx-a11y/label-has-for": "off",
+    // "react/no-array-index-key": "off",
+    // "no-plusplus": "off",
+    "no-console": "off",
+    "react/jsx-filename-extension": [0,
+      {
+        "extensions": [
+          ".tsx",
+          ".ts"
+        ]
+      }
+    ],
+    "import/extensions": "off"
+  },
+  "globals": { "document": true, "window": true, "sessionStorage": true },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

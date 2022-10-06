@@ -1,0 +1,19 @@
+.main {
+  padding: 15px;
+}
+
+b {
+  color: hotpink;
+}
+
+@layer default {
+  p {
+    font-size: 2rem;
+  }
+}
+
+@layer second-layer {
+  p {
+    font-size: 1.1rem;
+  }
+}
