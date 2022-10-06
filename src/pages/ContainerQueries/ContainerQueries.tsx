@@ -7,14 +7,7 @@ import ContentLayout from 'layout/ContentLayout';
 import './ContainerQueries.scss';
 
 const ContainerQueries: React.FC = () => {
-  const code = `.card {
-    background-color: aquamarine;
-    border-radius: 4px;
-    max-width: 400px;
-    padding: 10px;
-}
-
-.large-container {
+  const code = `.large-container {
     container-type: inline-size;
     container-name: large-container;
 }
@@ -24,13 +17,13 @@ const ContainerQueries: React.FC = () => {
     container-name: small-container;
 }
 
-@container large-container (max-width: 400px) {
+@container large-container (max-width: 600px) {
     .card {
         background-color: crimson;
     }
 }
 
-@container small-container (max-width: 300px) {
+@container small-container (max-width: 400px) {
     .card {
         background-color: gold;
     }

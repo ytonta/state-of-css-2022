@@ -44,7 +44,7 @@ const Inert: React.FC = () => {
         <button id="button1">I am not inert</button>
       </div>
       {/* @ts-ignore */}
-      <div inert>
+      <div inert="true">
         <label htmlFor="button2">Button 2</label>
         <button id="button2">I am inert</button>
       </div>
