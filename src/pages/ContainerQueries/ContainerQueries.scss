@@ -1,7 +1,6 @@
 .card {
   background-color: aquamarine;
   border-radius: 4px;
-  max-width: 400px;
   padding: 10px;
 }
 
@@ -15,13 +14,13 @@
   container-name: small-container;
 }
 
-@container large-container (max-width: 400px) {
+@container large-container (max-width: 600px) {
   .card {
     background-color: crimson;
   }
 }
 
-@container small-container (max-width: 300px) {
+@container small-container (max-width: 400px) {
   .card {
     background-color: gold;
   }

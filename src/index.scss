@@ -6,14 +6,20 @@ b {
   color: hotpink;
 }
 
-@layer default {
-  p {
-    font-size: 2rem;
+@layer framework {
+  @layer default {
+    p {
+      font-size: 0.75em;
+    }
   }
-}
 
-@layer second-layer {
   p {
-    font-size: 1.1rem;
+    font-size: 1em;
+  }
+
+  @layer theme {
+    p {
+      font-size: 0.5em;
+    }
   }
 }

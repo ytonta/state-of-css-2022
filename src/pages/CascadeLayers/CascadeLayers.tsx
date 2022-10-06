@@ -16,23 +16,23 @@ const CascadeLayers: React.FC = () => {
 `;
 
   const code2 = `@layer default {
-    p  { max-width: 70px; }
+    p  { margin-bottom: 1.1em; }
 }
 
 @layer framework {
     @layer default {
-        p  { margin-block: 0.75em; }
+        p  { margin-bottom: 0.75em; }
     }
 
-        p  { margin-bottom: 1em; }
+    p  { margin-bottom: 1em; }
 
     @layer theme {
-        p  { color: #222; }
+        p  { margin-bottom: 0.5em; }
     }
 }`;
 
   const code3 = `@layer framework.theme {
-     blockquote { color: rebeccapurple; }
+     blockquote { color: hotpink; }
 }`;
 
   return (

@@ -23,7 +23,7 @@ const Subgrid: React.FC = () => {
 
 .subitem {
     grid-column: 3   /   6;
-    grid-row: 1   /   3;
+    grid-row: 1   /   2;
 }
 `;
 
