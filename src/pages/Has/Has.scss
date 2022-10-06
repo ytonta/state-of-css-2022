@@ -1,0 +1,12 @@
+.parent {
+  padding: 15px;
+  background-color: #17d1b8;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+@supports (selector(:has(works))) {
+  .parent:has(.child) {
+    background-color: #f4f4f4;
+  }
+}

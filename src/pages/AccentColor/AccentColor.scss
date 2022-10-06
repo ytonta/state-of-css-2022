@@ -1,0 +1,37 @@
+.accented {
+  accent-color: black;
+}
+
+[color-scheme='dark'].accented {
+  accent-color: white;
+}
+
+[color-scheme='light'] {
+  color-scheme: light;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 4px;
+  background: #eee;
+  color: black;
+}
+
+[color-scheme='dark'] {
+  color-scheme: dark;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 4px;
+  background: #333;
+  color: white;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
